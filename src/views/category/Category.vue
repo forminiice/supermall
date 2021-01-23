@@ -117,14 +117,17 @@
     },
     mounted() {
       this.scroll = new BScroll(document.querySelector('.wrapper'), {
-        
+        probeType: 3,
+        click: true,
+        pullUpLoad: true
       })
     }
   }
 </script>
 
 <style scoped>
-  .content {
+  .wrapper {
+    overflow: hidden;
     height: 200px;
     background-color: #cccccc;
   }
